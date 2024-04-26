@@ -1,0 +1,7 @@
+{
+  "name": "globe-ui",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

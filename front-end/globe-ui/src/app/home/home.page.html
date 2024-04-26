@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <app-main-toolbar></app-main-toolbar>
+    </ion-row>
+    <ion-row class="ion-justify-content-center ion-padding-top">
+      <ion-buttons>
+        <ion-nav-link (click)="setCountryComponent()">
+          <ion-button>Países</ion-button>
+        </ion-nav-link>
+        <ion-nav-link (click)="setBudgetComponent()">
+          <ion-button>Presupuestos</ion-button>
+        </ion-nav-link>
+        <ion-nav-link (click)="setDataComponent()">
+          <ion-button>Mis datos</ion-button>
+        </ion-nav-link>
+      </ion-buttons>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+  <ion-nav [root]="component" [animated]="true"></ion-nav>
+</ion-content>
